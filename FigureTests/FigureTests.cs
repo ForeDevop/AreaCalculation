@@ -33,7 +33,7 @@ public class FigureTests
     #region Triangle
 
     /// <summary>
-    /// Test on negative side values.
+    /// Test for negative side values.
     /// </summary>
     [Test]
     public void TriangleNegativeSidesTest()
@@ -53,19 +53,19 @@ public class FigureTests
     }
 
     /// <summary>
-    /// Test for the right triangle.
+    /// Test for the rectangular triangle.
     /// </summary>
     [Test]
-    public void TriangleIsRightAngleTest()
+    public void TriangleIsRightTest()
     {
         Assert.That(new Triangle(5, 3, 4).IsRight(), Is.EqualTo(true));
     }
 
     /// <summary>
-    /// Test for the not right triangle.
+    /// Test for the non-rectangular triangle.
     /// </summary>
     [Test]
-    public void TriangleIsNotRightAngleTest()
+    public void TriangleIsNotRightTest()
     {
         Assert.That(new Triangle(6, 2, 7).IsRight(), Is.EqualTo(false));
     }
